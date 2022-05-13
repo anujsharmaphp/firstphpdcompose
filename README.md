@@ -17,5 +17,13 @@ docker pull anujarcanetinmen/myphpmyadmin:V1.0<br />
 Run below command in same folder where docker-compose.yml file is :<br />
 docker-compose up -d 
 
+Open http://localhost:8080 for phpmyadmin  
+server :mydb
+user: MYSQL_USER
+pass : MYSQL_ROOT_PASSWORD
+
+Import db/db.sql to MYSQL_DATABASE
+
+Open http://localhost:8000/ for php application
 
 
