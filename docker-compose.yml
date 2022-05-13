@@ -13,7 +13,7 @@ services:
             - 8000:80
     db:
         container_name: db
-        image: mysql
+        image: mymysql
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
@@ -27,7 +27,7 @@ services:
           - ./dbdata:/var/lib/mysql
 
     phpmyadmin:
-        image: phpmyadmin
+        image: myphpmyadmin
         restart: always
         ports:
           - 8080:80
