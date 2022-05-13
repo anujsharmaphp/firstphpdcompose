@@ -11,7 +11,7 @@ services:
             - ./php:/var/www/html/
         ports:
             - 8000:80
-    db:
+    mydb:
         container_name: mydb
         image: anujarcanetinmen/mymysql:V1.0
         restart: always
