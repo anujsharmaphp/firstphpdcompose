@@ -6,13 +6,13 @@ services:
             context: ./php
             dockerfile: Dockerfile
         depends_on:
-            - db
+            - mydb
         volumes:
-            - ./php/src:/var/www/html/
+            - ./php:/var/www/html/
         ports:
             - 8000:80
     db:
-        container_name: db
+        container_name: mydb
         image: anujarcanetinmen/mymysql:V1.0
         restart: always
         environment:
